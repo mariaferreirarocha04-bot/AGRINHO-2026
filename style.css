@@ -1,0 +1,169 @@
+/* Configurações Gerais e Resets */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f4f7f6;
+    color: #333;
+    scroll-behavior: smooth;
+}
+
+/* Menu de Navegação (Navbar) */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%;
+    background-color: #0B2545; /* Azul Escuro Fechado */
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar .logo {
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.navbar .logo span {
+    color: #00B4D8; /* Azul Ciano/Sustentável */
+}
+
+.navbar nav a {
+    color: #e0e0e0;
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.navbar nav a:hover {
+    color: #00B4D8;
+}
+
+.navbar .btn-contato {
+    background-color: #134074;
+    padding: 8px 16px;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.navbar .btn-contato:hover {
+    background-color: #00B4D8;
+    color: #0B2545;
+}
+
+/* Seção Hero (Banner Principal) */
+.hero-section {
+    background: linear-gradient(135deg, rgba(11, 37, 69, 0.9), rgba(19, 64, 116, 0.8)), 
+                url('https://images.unsplash.com/photo-1530595467537-0b5996c41f2d?auto=format&fit=crop&w=1950&q=80') no-repeat center center/cover;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding: 0 20px;
+}
+
+.hero-content h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+.hero-content .highlight {
+    color: #00B4D8;
+}
+
+.hero-content p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    color: #d1e8e2;
+}
+
+.btn-principal {
+    display: inline-block;
+    padding: 12px 30px;
+    background-color: #2D6A4F; /* Detalhe em Verde para Sustentabilidade */
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 25px;
+    transition: transform 0.3s, background 0.3s;
+}
+
+.btn-principal:hover {
+    background-color: #40916C;
+    transform: translateY(-3px);
+}
+
+/* Seção de Pilares (Cards) */
+.features-section {
+    padding: 80px 8%;
+    text-align: center;
+}
+
+.features-section h2 {
+    font-size: 36px;
+    color: #0B2545;
+    margin-bottom: 10px;
+}
+
+.features-section .subtitle {
+    color: #666;
+    margin-bottom: 50px;
+}
+
+.cards-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: white;
+    flex: 1;
+    min-width: 250px;
+    padding: 40px 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    transition: transform 0.3s, border-top 0.3s;
+    border-top: 5px solid #134074;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    border-top: 5px solid #00B4D8;
+}
+
+.card-icon {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.card h3 {
+    color: #0B2545;
+    margin-bottom: 15px;
+}
+
+.card p {
+    color: #666;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+/* Rodapé (Footer) */
+footer {
+    background-color: #0B2545;
+    color: #8da9c4;
+    text-align: center;
+    padding: 30px 20px;
+    font-size: 14px;
+}
